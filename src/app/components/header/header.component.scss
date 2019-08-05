@@ -1,5 +1,5 @@
 .header {
-  background: pink;
+  background: #fec9f1;
 }
 
 .wrapper {
@@ -23,6 +23,9 @@
     margin-bottom: 0;
     li {
       margin: 0 6px;
+      a {
+        color: #e899dc;
+      }
     }
   }
 }
