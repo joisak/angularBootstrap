@@ -1,51 +1,34 @@
 <div class="row">
   <div class="col-md-6">
     <form>
+      <h4>Fyll i formuläret</h4>
       <div class="form-group">
-        <label for="name">Namn</label>
-        <input
-          id="name"
-          class="form-control"
-          type="text"
-          placeholder="Ditt namn"
-        />
+        <mat-form-field class="full-width">
+          <input matInput color="primary" placeholder="Namn" value="" />
+        </mat-form-field>
       </div>
 
       <div class="form-group">
-        <label for="email">Email</label>
-        <input
-          class="form-control"
-          id="email"
-          type="text"
-          placehoder="Din email"
-        />
-        <small class="small-input-text"
-          >Vi kommer aldrig att dela din mail till andra företag, vi är inga
-          svin helt enkelt :)</small
-        >
+        <mat-form-field class="full-width">
+          <input matInput placeholder="Email" value="" />
+        </mat-form-field>
       </div>
 
       <div class="form-group">
-        <label for="address">Adress</label>
-        <input
-          class="form-control"
-          id="address"
-          type="text"
-          placeholder="Din address"
-        />
+        <mat-form-field class="full-width">
+          <input matInput placeholder="Adress" value="" />
+        </mat-form-field>
       </div>
 
       <div class="form-group">
-        <label for="city">Stad</label>
-        <input
-          class="form-control"
-          type="text"
-          id="city"
-          placeholder="Var bor du?"
-        />
+        <mat-form-field class="full-width">
+          <input matInput placeholder="Var bor du?" value="" />
+        </mat-form-field>
       </div>
 
-      <button type="submit" class="btn btn-primary">Sign up!</button>
+      <button class="full-width" color="primary" mat-stroked-button>
+        Skicka!
+      </button>
     </form>
   </div>
 </div>
