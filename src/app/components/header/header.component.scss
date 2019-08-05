@@ -1,5 +1,7 @@
+@import '../../../assets/colors.scss';
+
 .header {
-  background: #fec9f1;
+  background: $primary-color;
 }
 
 .wrapper {
@@ -13,6 +15,8 @@
   letter-spacing: 2px;
   font-style: italic;
   font-weight: 700;
+  color: $secondary-color;
+  font-size: 30px;
 }
 
 .header-menu {
@@ -24,7 +28,8 @@
     li {
       margin: 0 6px;
       a {
-        color: #e899dc;
+        color: $secondary-color;
+        font-size: 700;
       }
     }
   }
