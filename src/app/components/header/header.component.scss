@@ -1,0 +1,28 @@
+.header {
+  background: pink;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+}
+
+.logo {
+  letter-spacing: 2px;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.header-menu {
+  ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    li {
+      margin: 0 6px;
+    }
+  }
+}
