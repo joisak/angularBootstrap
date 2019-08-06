@@ -7,9 +7,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormComponent } from './components/form/form.component';
 import { HeaderComponent } from './components/header/header.component';
+import { FullScreenComponent } from './components/full-screen/full-screen.component';
 
 @NgModule({
-  declarations: [AppComponent, FormComponent, HeaderComponent],
+  declarations: [AppComponent, FormComponent, HeaderComponent, FullScreenComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
