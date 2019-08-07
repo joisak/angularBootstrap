@@ -1,6 +1,6 @@
 .wrapper {
   height: 100vh;
-  background-color: pink;
+  background-color: white;
   .inner-wrapper {
     padding: 0 48px;
     height: inherit;
@@ -10,17 +10,184 @@
 .fullscreen-menu {
   display: flex;
   flex-direction: column;
-  align-content: flex-end;
-  justify-content: flex-end;
-  height: 100%;
+  position: absolute;
+  bottom: 0;
   .vertical-menu {
     list-style: none;
     padding: 0;
     li {
+      padding: 0;
+      margin: 0;
+      line-height: 1;
       a {
-        font-size: 2rem;
+        font-size: 5rem;
         font-weight: bold;
+        color: white;
+        text-shadow: 0 1px 4px white;
+        background: pink;
+        padding: 12px 12px;
+        letter-spacing: 0.04em;
       }
     }
+  }
+}
+
+#pedal-2 {
+  animation: pedal 2.5s ease-out forwards;
+  opacity: 0;
+  transform-origin: center;
+}
+
+#Path_6 {
+  fill: red;
+  height: 50px;
+  width: 100px;
+  transform-origin: center;
+}
+
+@keyframes pedal {
+  50% {
+    fill: red;
+    transform: scale(5);
+  }
+  100% {
+    opacity: 1;
+    fill: pink;
+    transform-origin: center;
+  }
+}
+
+#Path_1 {
+  animation: forPath1 4s ease-out forwards;
+  opacity: 0;
+  transform-origin: center;
+}
+
+@keyframes forPath1 {
+  50% {
+    fill: red;
+    opacity: 0;
+    transform: translateY(150px);
+  }
+  100% {
+    opacity: 1;
+    fill: pink;
+    transform-origin: center;
+  }
+}
+
+#Path_2 {
+  animation: forPath2 4s ease-out forwards;
+  opacity: 1;
+  transform-origin: center;
+}
+
+@keyframes forPath2 {
+  50% {
+    fill: red;
+    opacity: 0;
+    transform: translateY(170px);
+  }
+  100% {
+    opacity: 1;
+    fill: pink;
+    transform-origin: center;
+  }
+}
+
+#Path_3 {
+  animation: forPath3 4s ease-out forwards;
+  opacity: 0;
+  transform-origin: center;
+}
+
+@keyframes forPath3 {
+  50% {
+    fill: red;
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
+    fill: pink;
+    transform-origin: center;
+  }
+}
+
+#Path_4 {
+  animation: forPath4 4s ease-out forwards;
+  opacity: 0;
+  transform-origin: center;
+}
+
+@keyframes forPath4 {
+  50% {
+    fill: red;
+    opacity: 0;
+    transform: translateY(500px);
+  }
+  100% {
+    opacity: 1;
+    fill: pink;
+    transform-origin: center;
+  }
+}
+
+#Path_5 {
+  animation: forPath5 4s ease-out forwards;
+  opacity: 0;
+  transform-origin: center;
+}
+
+@keyframes forPath5 {
+  50% {
+    fill: red;
+    opacity: 0;
+    transform: translateX(500px);
+  }
+  100% {
+    opacity: 1;
+    fill: pink;
+    transform-origin: center;
+  }
+}
+
+#rect-1 {
+  animation: Rectangle_1 4s ease-out forwards;
+  opacity: 0;
+  transform-origin: center;
+}
+
+@keyframes Rectangle_1 {
+  50% {
+    fill: red;
+    opacity: 0;
+    transform: translateX(500px);
+    border: pink;
+  }
+  100% {
+    opacity: 1;
+    fill: pink;
+    transform-origin: center;
+  }
+}
+
+#rect-2 {
+  animation: Rectangle_1 4s ease-out forwards;
+  opacity: 0;
+  transform-origin: center;
+}
+
+@keyframes Rectangle_1 {
+  50% {
+    fill: red;
+    opacity: 0;
+    transform: translateY(-500px);
+    border: pink;
+  }
+  100% {
+    opacity: 1;
+    fill: pink;
+    transform-origin: center;
   }
 }
